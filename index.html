@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PartSpan Free Edition | Local BOM Management</title>
+    <meta
+      name="description"
+      content="PartSpan Free Edition is a local-first BOM management tool for electronics teams moving beyond spreadsheet BOM control."
+    />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/">
+        <span class="brand-mark">P</span>
+        <span>PartSpan</span>
+      </a>
+      <nav>
+        <a href="#free">Free Edition</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#download">Download</a>
+        <a href="#zh">繁中</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Local-first BOM management</p>
+          <h1>Move electronics BOM work out of fragile spreadsheets.</h1>
+          <p class="lead">
+            PartSpan Free Edition helps hardware teams manage BOM revisions, RefDes, approved alternates,
+            inventory locations, and where-used impact without uploading company BOM data to a sourcing cloud.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-action" href="#download">Get Free Edition</a>
+            <a class="secondary-action" href="/sample-bom.csv">Download sample BOM</a>
+          </div>
+        </div>
+        <div class="product-panel" aria-label="PartSpan workflow preview">
+          <div class="panel-top">
+            <span>BOM Matrix</span>
+            <strong>PRD-007 Rev C</strong>
+          </div>
+          <div class="matrix">
+            <span>RefDes</span><span>Internal PN</span><span>MPN</span><span>AVL</span>
+            <strong>U1</strong><strong>IC-0001</strong><strong>STM32F407VGT6</strong><em>2 approved</em>
+            <strong>U2</strong><strong>IC-0002</strong><strong>TPS5430DDAR</strong><em>1 conditional</em>
+            <strong>J1</strong><strong>CON-0001</strong><strong>USB4105-GF-A</strong><em class="risk">shortage</em>
+          </div>
+        </div>
+      </section>
+
+      <section id="free" class="section-grid">
+        <div>
+          <p class="eyebrow">Free Edition</p>
+          <h2>Useful for small teams before PLM becomes necessary.</h2>
+          <p>
+            Start with local BOM import, BOM Matrix review, RefDes visibility, AVL records, and simple inventory
+            locations. Paid editions can later unlock higher local limits and governance workflows.
+          </p>
+        </div>
+        <div class="feature-list">
+          <span>CSV / XLSX BOM import</span>
+          <span>Released BOM Matrix</span>
+          <span>RefDes and footprint visibility</span>
+          <span>AVL alternates</span>
+          <span>Inventory bins</span>
+          <span>Where-used impact</span>
+          <span>Workspace JSON export</span>
+          <span>English / 繁中 interface</span>
+        </div>
+      </section>
+
+      <section id="workflow" class="workflow">
+        <p class="eyebrow">Simple operating flow</p>
+        <h2>Three steps to organize the first product BOM.</h2>
+        <div class="steps">
+          <article>
+            <strong>1</strong>
+            <h3>Create local workspace</h3>
+            <p>PartSpan stores product, part, BOM, AVL, inventory, and audit data in a local SQLite database.</p>
+          </article>
+          <article>
+            <strong>2</strong>
+            <h3>Import BOM</h3>
+            <p>Paste or upload a spreadsheet with internal PN, MPN, quantity, RefDes, and footprint.</p>
+          </article>
+          <article>
+            <strong>3</strong>
+            <h3>Review and release</h3>
+            <p>Confirm the BOM Matrix, then add inventory locations and approved alternates.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="download" class="download">
+        <div>
+          <p class="eyebrow">Download</p>
+          <h2>Free Edition runs locally.</h2>
+          <p>
+            The first release is distributed as a local Node.js app. It serves the UI and API from one local server,
+            and keeps BOM data in a local SQLite file.
+          </p>
+        </div>
+        <div class="install-card">
+          <code>npm install</code>
+          <code>npm run build</code>
+          <code>NODE_ENV=production npm start</code>
+          <a class="secondary-action" href="/sample-bom.csv">Try with sample BOM</a>
+        </div>
+      </section>
+
+      <section id="zh" class="section-grid zh-block" lang="zh-Hant">
+        <div>
+          <p class="eyebrow">繁體中文</p>
+          <h2>給還在用 Excel 管 BOM 的電子硬體團隊。</h2>
+          <p>
+            PartSpan Free Edition 以本機資料庫管理 BOM、RefDes、AVL 替代料與庫存位置。
+            BOM 作業不需要供應商 API、報價資料源或雲端同步。
+          </p>
+        </div>
+        <div class="feature-list">
+          <span>本機 SQLite 儲存</span>
+          <span>CSV / XLSX 匯入</span>
+          <span>BOM 矩陣</span>
+          <span>RefDes 位號</span>
+          <span>AVL 替代料</span>
+          <span>庫存儲位</span>
+          <span>使用位置分析</span>
+          <span>中英文介面</span>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span>PartSpan Free Edition</span>
+      <span>Local-first BOM management. No supplier quote feed required.</span>
+    </footer>
+  </body>
+</html>
