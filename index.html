@@ -122,6 +122,51 @@
         </div>
       </section>
 
+      <section class="section-grid install-help">
+        <div>
+          <p class="eyebrow">First launch</p>
+          <h2>Opening an unsigned alpha build.</h2>
+          <p>
+            The alpha is not yet code-signed. Your OS will warn you the first time. This is expected — the steps below
+            are only needed once.
+          </p>
+        </div>
+        <div class="install-steps">
+          <div class="install-step">
+            <h3>macOS</h3>
+            <ol>
+              <li>Open the DMG and drag PartSpan to Applications.</li>
+              <li>Right-click (or Control-click) PartSpan.app and choose <strong>Open</strong>.</li>
+              <li>
+                If macOS still blocks it: open <strong>System Settings → Privacy &amp; Security</strong>, scroll down,
+                and click <strong>Open Anyway</strong> next to the PartSpan message.
+              </li>
+              <li>
+                If you see "PartSpan is damaged", run this once in Terminal:
+                <code>xattr -cr /Applications/PartSpan.app</code>
+              </li>
+            </ol>
+            <p lang="zh-Hant">
+              中文：安裝後對 PartSpan.app 按右鍵選「打開」。若仍被擋，到「系統設定 → 隱私權與安全性」點「強制打開」。
+              出現「已損毀」訊息時，在終端機執行一次 <code>xattr -cr /Applications/PartSpan.app</code>。
+            </p>
+          </div>
+          <div class="install-step">
+            <h3>Windows</h3>
+            <ol>
+              <li>Run the installer EXE.</li>
+              <li>
+                When SmartScreen shows "Windows protected your PC", click <strong>More info</strong>, then
+                <strong>Run anyway</strong>.
+              </li>
+            </ol>
+            <p lang="zh-Hant">
+              中文：SmartScreen 出現「Windows 已保護您的電腦」時，點「其他資訊」再點「仍要執行」。
+            </p>
+          </div>
+        </div>
+      </section>
+
       <section id="zh" class="section-grid zh-block" lang="zh-Hant">
         <div>
           <p class="eyebrow">繁體中文</p>
