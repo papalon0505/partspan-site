@@ -276,6 +276,20 @@ h3 {
   flex-direction: column;
 }
 
+.install-card .primary-action,
+.install-card .secondary-action {
+  width: 100%;
+}
+
+.release-link {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.release-link:hover {
+  color: var(--text);
+}
+
 code {
   display: block;
   border-radius: 0.45rem;
