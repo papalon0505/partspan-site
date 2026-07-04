@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://partspan.evelyn-ai.com/sitemap.xml

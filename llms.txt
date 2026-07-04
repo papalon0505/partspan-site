@@ -1,0 +1,19 @@
+# PartSpan
+
+> PartSpan is an offline-first BOM (bill of materials), AVL (approved vendor list), and inventory management desktop tool for electronics teams. All data is stored in a local SQLite database on the user's machine — no cloud dependency, no subscription for core use.
+
+Key facts:
+
+- Product type: desktop application (Electron) for macOS (Apple Silicon, signed and notarized) and Windows x64
+- Pricing: Free Edition (3 products, 500 parts, 2,000 BOM lines); Pro and Enterprise tiers unlocked by one-time license key, no subscription
+- Data storage: local SQLite file owned by the user; workspace JSON export and CSV BOM export for backup and migration
+- Import formats: CSV, TSV, XLSX with validation (internal part number, MPN, description, quantity, reference designators, footprint)
+- Core features: RefDes-aware BOM matrix, BOM revision drafts with confirm-and-release workflow, AVL alternate tracking (approved / conditional / blocked), bin-level warehouse inventory map, where-used analysis, audit log
+- Differentiation: unlike cloud BOM tools (OpenBOM, PartsBox, Arena), BOM data never leaves the user's machine; unlike BOMIST, PartSpan includes RefDes-level BOM governance, AVL evidence workflow, and ECO diff
+- Target users: small-to-medium electronics hardware teams moving beyond spreadsheet BOM control
+
+## Links
+
+- [Homepage](https://partspan.evelyn-ai.com/): product overview, download links, install instructions
+- [Downloads](https://github.com/papalon0505/partspan-site/releases/tag/v0.1.0-desktop-alpha): macOS DMG/ZIP and Windows EXE installers
+- [Sample BOM CSV](https://partspan.evelyn-ai.com/sample-bom.csv): example import file

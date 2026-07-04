@@ -6,9 +6,102 @@
     <title>PartSpan Free Edition | Local BOM Management</title>
     <meta
       name="description"
-      content="PartSpan Free Edition is a local-first BOM management tool for electronics teams moving beyond spreadsheet BOM control."
+      content="PartSpan Free Edition is a local-first BOM management tool for electronics teams moving beyond spreadsheet BOM control. Free desktop app for macOS and Windows with local SQLite storage."
+    />
+    <link rel="canonical" href="https://partspan.evelyn-ai.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://partspan.evelyn-ai.com/" />
+    <meta property="og:title" content="PartSpan Free Edition | Local BOM Management" />
+    <meta
+      property="og:description"
+      content="Offline-first BOM, AVL, and inventory management for electronics teams. Your BOM data stays on your machine — no cloud, no subscription."
+    />
+    <meta property="og:site_name" content="PartSpan" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="PartSpan Free Edition | Local BOM Management" />
+    <meta
+      name="twitter:description"
+      content="Offline-first BOM, AVL, and inventory management for electronics teams. Free desktop app for macOS and Windows."
     />
     <link rel="stylesheet" href="/styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "PartSpan",
+        "operatingSystem": "macOS, Windows",
+        "applicationCategory": "BusinessApplication",
+        "applicationSubCategory": "BOM management",
+        "description": "Offline-first BOM, AVL, and inventory management tool for electronics teams. All data stays in a local SQLite database on the user's machine — no cloud dependency, no subscription required for core use.",
+        "url": "https://partspan.evelyn-ai.com/",
+        "downloadUrl": "https://partspan.evelyn-ai.com/#download",
+        "softwareVersion": "0.1.0",
+        "releaseNotes": "https://github.com/papalon0505/partspan-site/releases/tag/v0.1.0-desktop-alpha",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD",
+          "description": "Free Edition with local BOM, AVL, and inventory management"
+        },
+        "featureList": [
+          "Local SQLite storage — BOM data never leaves the machine",
+          "CSV, TSV, and XLSX BOM import with validation",
+          "RefDes-aware BOM matrix with line-level risk",
+          "Approved Vendor List (AVL) alternate tracking",
+          "Bin-level warehouse inventory map",
+          "BOM revision drafts with confirm-and-release workflow",
+          "Workspace JSON export and CSV BOM export"
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Does PartSpan upload my BOM data to the cloud?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. PartSpan is offline-first: all BOM, AVL, and inventory data is stored in a local SQLite database on your own machine. Nothing is uploaded to any cloud service."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is PartSpan free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. The Free Edition supports up to 3 products, 500 parts, and 2,000 BOM lines with full BOM, AVL, and inventory features. Higher limits are unlocked with a one-time license key — no subscription."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What file formats can PartSpan import?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PartSpan imports BOMs from CSV, TSV, and XLSX files with columns for internal part number, MPN, description, quantity, reference designators, and footprint. Rows are validated before a draft BOM is created."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How is PartSpan different from cloud BOM tools like OpenBOM or PartsBox?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Cloud BOM tools store your bill of materials on their servers and charge a monthly subscription. PartSpan keeps everything local: your data lives in a SQLite file you own and back up yourself, and the license is a one-time purchase."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which platforms does PartSpan support?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "PartSpan Desktop runs on macOS (Apple Silicon, signed and notarized by Apple) and Windows x64."
+            }
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <header class="site-header">
