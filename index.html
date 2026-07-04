@@ -101,7 +101,8 @@
           <h2>Download the Free Desktop Alpha.</h2>
           <p>
             Install PartSpan as a local desktop app. BOM data stays on your computer in a local SQLite database.
-            This alpha is unsigned, so macOS Gatekeeper or Windows SmartScreen may show a warning.
+            The macOS build is signed and notarized by Apple. The Windows build is not yet code-signed, so
+            SmartScreen may show a warning.
           </p>
         </div>
         <div class="install-card">
@@ -127,8 +128,8 @@
           <p class="eyebrow">First launch</p>
           <h2>Opening an unsigned alpha build.</h2>
           <p>
-            The alpha is not yet code-signed. Your OS will warn you the first time. This is expected — the steps below
-            are only needed once.
+            The macOS build opens normally. The Windows build is not yet code-signed, so SmartScreen will warn you
+            the first time — the steps below are only needed once.
           </p>
         </div>
         <div class="install-steps">
@@ -136,19 +137,10 @@
             <h3>macOS</h3>
             <ol>
               <li>Open the DMG and drag PartSpan to Applications.</li>
-              <li>Right-click (or Control-click) PartSpan.app and choose <strong>Open</strong>.</li>
-              <li>
-                If macOS still blocks it: open <strong>System Settings → Privacy &amp; Security</strong>, scroll down,
-                and click <strong>Open Anyway</strong> next to the PartSpan message.
-              </li>
-              <li>
-                If you see "PartSpan is damaged", run this once in Terminal:
-                <code>xattr -cr /Applications/PartSpan.app</code>
-              </li>
+              <li>Double-click to launch. The app is signed and notarized by Apple — no security bypass needed.</li>
             </ol>
             <p lang="zh-Hant">
-              中文：安裝後對 PartSpan.app 按右鍵選「打開」。若仍被擋，到「系統設定 → 隱私權與安全性」點「強制打開」。
-              出現「已損毀」訊息時，在終端機執行一次 <code>xattr -cr /Applications/PartSpan.app</code>。
+              中文：打開 DMG，把 PartSpan 拖進「應用程式」，直接雙擊開啟即可。App 已完成 Apple 簽章與公證。
             </p>
           </div>
           <div class="install-step">
