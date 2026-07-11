@@ -20,9 +20,13 @@ GitHub Pages is enabled as the immediate $0 public launch URL:
 
 https://papalon0505.github.io/partspan-site/
 
-Public desktop alpha downloads are hosted on GitHub Releases:
+Public desktop 0.1.1 release candidate downloads are hosted on GitHub Releases:
 
 https://github.com/papalon0505/partspan-site/releases/tag/v0.1.1-desktop-rc
+
+Published installer checksums are mirrored at:
+
+https://partspan.evelyn-ai.com/SHA256SUMS.txt
 
 ## Cloudflare DNS fallback
 
