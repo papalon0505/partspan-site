@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640" role="img" aria-labelledby="title desc">
+  <title id="title">PartSpan BOM Matrix preview</title>
+  <desc id="desc">A dark technology style preview of PartSpan showing BOM rows, RefDes, MPN, AVL, inventory, and release status.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#08111f"/>
+      <stop offset=".55" stop-color="#111827"/>
+      <stop offset="1" stop-color="#0a1f22"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" x2="1">
+      <stop offset="0" stop-color="#42d9ff"/>
+      <stop offset="1" stop-color="#53e3a6"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="28" stdDeviation="30" flood-color="#000" flood-opacity=".35"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="640" fill="url(#bg)"/>
+  <circle cx="210" cy="40" r="260" fill="#42d9ff" opacity=".13"/>
+  <rect x="70" y="58" width="1060" height="524" rx="20" fill="#0f1c2f" stroke="#2a3f5e" filter="url(#shadow)"/>
+  <rect x="70" y="58" width="1060" height="68" rx="20" fill="#13243b"/>
+  <circle cx="108" cy="92" r="10" fill="#ff6b6b"/>
+  <circle cx="138" cy="92" r="10" fill="#ffb86b"/>
+  <circle cx="168" cy="92" r="10" fill="#53e3a6"/>
+  <text x="212" y="100" fill="#edf6ff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24" font-weight="700">PartSpan BOM Matrix</text>
+  <text x="960" y="100" fill="#9fb0c7" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="18">PRD-007 Rev C</text>
+  <rect x="104" y="158" width="250" height="86" rx="12" fill="#081827" stroke="#2a3f5e"/>
+  <rect x="382" y="158" width="250" height="86" rx="12" fill="#081827" stroke="#2a3f5e"/>
+  <rect x="660" y="158" width="250" height="86" rx="12" fill="#081827" stroke="#2a3f5e"/>
+  <rect x="938" y="158" width="158" height="86" rx="12" fill="#081827" stroke="#2a3f5e"/>
+  <text x="126" y="190" fill="#9fb0c7" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15">Released lines</text>
+  <text x="126" y="222" fill="#edf6ff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="30" font-weight="800">148</text>
+  <text x="404" y="190" fill="#9fb0c7" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15">AVL alternates</text>
+  <text x="404" y="222" fill="#53e3a6" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="30" font-weight="800">37</text>
+  <text x="682" y="190" fill="#9fb0c7" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15">Inventory bins</text>
+  <text x="682" y="222" fill="#42d9ff" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="30" font-weight="800">22</text>
+  <text x="960" y="190" fill="#9fb0c7" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15">Status</text>
+  <text x="960" y="222" fill="#ffb86b" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="24" font-weight="800">Review</text>
+  <rect x="104" y="284" width="992" height="238" rx="12" fill="#0b1628" stroke="#2a3f5e"/>
+  <g font-family="Inter,Segoe UI,Arial,sans-serif" font-size="16">
+    <rect x="104" y="284" width="992" height="48" rx="12" fill="#13243b"/>
+    <text x="130" y="314" fill="#9fb0c7">RefDes</text>
+    <text x="280" y="314" fill="#9fb0c7">Internal PN</text>
+    <text x="470" y="314" fill="#9fb0c7">MPN</text>
+    <text x="720" y="314" fill="#9fb0c7">AVL</text>
+    <text x="880" y="314" fill="#9fb0c7">Inventory</text>
+    <line x1="104" y1="378" x2="1096" y2="378" stroke="#243955"/>
+    <line x1="104" y1="426" x2="1096" y2="426" stroke="#243955"/>
+    <line x1="104" y1="474" x2="1096" y2="474" stroke="#243955"/>
+    <text x="130" y="362" fill="#edf6ff" font-weight="700">U1</text>
+    <text x="280" y="362" fill="#edf6ff">IC-0001</text>
+    <text x="470" y="362" fill="#edf6ff">STM32F407VGT6</text>
+    <text x="720" y="362" fill="#53e3a6">2 approved</text>
+    <text x="880" y="362" fill="#42d9ff">A1-04 / 128 pcs</text>
+    <text x="130" y="410" fill="#edf6ff" font-weight="700">U2</text>
+    <text x="280" y="410" fill="#edf6ff">IC-0002</text>
+    <text x="470" y="410" fill="#edf6ff">TPS5430DDAR</text>
+    <text x="720" y="410" fill="#ffb86b">1 conditional</text>
+    <text x="880" y="410" fill="#42d9ff">B2-11 / 46 pcs</text>
+    <text x="130" y="458" fill="#edf6ff" font-weight="700">J1</text>
+    <text x="280" y="458" fill="#edf6ff">CON-0001</text>
+    <text x="470" y="458" fill="#edf6ff">USB4105-GF-A</text>
+    <text x="720" y="458" fill="#ffb86b">shortage</text>
+    <text x="880" y="458" fill="#9fb0c7">none</text>
+    <text x="130" y="506" fill="#edf6ff" font-weight="700">R1-R8</text>
+    <text x="280" y="506" fill="#edf6ff">RES-0100</text>
+    <text x="470" y="506" fill="#edf6ff">RC0402FR-0710KL</text>
+    <text x="720" y="506" fill="#53e3a6">3 approved</text>
+    <text x="880" y="506" fill="#42d9ff">C3-02 / 2,400 pcs</text>
+  </g>
+  <rect x="104" y="544" width="250" height="10" rx="5" fill="url(#accent)"/>
+  <text x="382" y="558" fill="#9fb0c7" font-family="Inter,Segoe UI,Arial,sans-serif" font-size="15">Local SQLite workspace · No supplier quote feed required</text>
+</svg>
