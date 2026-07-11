@@ -15,5 +15,5 @@ Key facts:
 ## Links
 
 - [Homepage](https://partspan.evelyn-ai.com/): product overview, download links, install instructions
-- [Downloads](https://github.com/papalon0505/partspan-site/releases/tag/v0.1.0-desktop-alpha): macOS DMG/ZIP and Windows EXE installers
+- [Downloads](https://github.com/papalon0505/partspan-site/releases/tag/v0.1.1-desktop-rc): macOS DMG/ZIP and Windows EXE installers
 - [Sample BOM CSV](https://partspan.evelyn-ai.com/sample-bom.csv): example import file

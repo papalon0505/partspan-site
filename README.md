@@ -22,7 +22,7 @@ https://papalon0505.github.io/partspan-site/
 
 Public desktop alpha downloads are hosted on GitHub Releases:
 
-https://github.com/papalon0505/partspan-site/releases/tag/v0.1.0-desktop-alpha
+https://github.com/papalon0505/partspan-site/releases/tag/v0.1.1-desktop-rc
 
 ## Cloudflare DNS fallback
 
