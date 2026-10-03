@@ -2,7 +2,7 @@
 
 Local-first BOM, AVL, RefDes, and inventory management for electronics teams moving beyond spreadsheet BOM control.
 
-[Download PartSpan](https://partspan.evelyn-ai.com/#download) · [Website](https://partspan.evelyn-ai.com/) · [v0.1.1 release](https://github.com/papalon0505/partspan-site/releases/tag/v0.1.1) · [SHA-256 checksums](https://partspan.evelyn-ai.com/SHA256SUMS.txt)
+[Download PartSpan](https://partspan.evelyn-ai.com/#download) · [Join the pilot](https://partspan.evelyn-ai.com/#pilot) · [Website](https://partspan.evelyn-ai.com/) · [v0.1.1 release](https://github.com/papalon0505/partspan-site/releases/tag/v0.1.1) · [SHA-256 checksums](https://partspan.evelyn-ai.com/SHA256SUMS.txt)
 
 ![PartSpan BOM Matrix preview](docs/partspan-bom-matrix-preview.svg)
 
@@ -32,6 +32,16 @@ Current public release: [PartSpan Desktop v0.1.1](https://github.com/papalon0505
 | Windows x64 | [PartSpan-0.1.1-win-x64.exe](https://github.com/papalon0505/partspan-site/releases/download/v0.1.1/PartSpan-0.1.1-win-x64.exe) |
 
 Verify installers with [SHA256SUMS.txt](https://github.com/papalon0505/partspan-site/releases/download/v0.1.1/SHA256SUMS.txt).
+
+## Pilot Feedback
+
+PartSpan is recruiting hardware teams that currently manage real BOM / AVL / inventory workflows in spreadsheets or lightweight tools.
+
+Use the public site's **Join the pilot** action to open a voluntary GitHub pilot-interest issue. Do not post confidential BOMs, credentials, customer names, proprietary part lists, or other sensitive company information.
+
+Campaign attribution and measurement boundaries are documented in [docs/distribution-measurement.md](docs/distribution-measurement.md).
+
+Paid local licensing is still under development and is not part of the current public v0.1.1 release.
 
 ## Security Notes
 

@@ -72,7 +72,7 @@
             "name": "Is PartSpan free?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. The Free Edition supports up to 3 products, 500 parts, and 2,000 BOM lines with full BOM, AVL, and inventory features. Higher limits are unlocked with a one-time license key — no subscription."
+              "text": "Yes. The current public v0.1.1 Free Edition is available at no charge for local evaluation and BOM workflows. Paid local licensing is still under development and is not part of the current public release."
             }
           },
           {
@@ -88,7 +88,7 @@
             "name": "How is PartSpan different from cloud BOM tools like OpenBOM or PartsBox?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Cloud BOM tools store your bill of materials on their servers and charge a monthly subscription. PartSpan keeps everything local: your data lives in a SQLite file you own and back up yourself, and the license is a one-time purchase."
+              "text": "PartSpan's current public Free Edition keeps BOM data local in a SQLite workspace you control. PartSpan is intended for teams that value local ownership and do not need mandatory cloud collaboration. Paid packaging is still under development."
             }
           },
           {
@@ -113,6 +113,7 @@
         <a href="#free">Free Edition</a>
         <a href="#workflow">Workflow</a>
         <a href="#download">Download</a>
+        <a href="#pilot">Pilot</a>
         <a href="#zh">繁中</a>
       </nav>
     </header>
@@ -129,6 +130,7 @@
           <div class="hero-actions">
             <a class="primary-action" href="#download">Get Free Edition</a>
             <a class="secondary-action" href="/sample-bom.csv">Download sample BOM</a>
+            <a class="secondary-action" id="pilot-link-hero" href="#pilot">Join the pilot</a>
           </div>
         </div>
         <div class="product-panel" aria-label="PartSpan workflow preview">
@@ -151,7 +153,7 @@
           <h2>Useful for small teams before PLM becomes necessary.</h2>
           <p>
             Start with local BOM import, BOM Matrix review, RefDes visibility, AVL records, and simple inventory
-            locations. Paid editions can later unlock higher local limits and governance workflows.
+            locations. The current public release is the Free Edition; paid local packaging remains under development.
           </p>
         </div>
         <div class="feature-list">
@@ -188,10 +190,39 @@
         </div>
       </section>
 
+
+      <section id="pilot" class="section-grid">
+        <div>
+          <p class="eyebrow">Pilot program</p>
+          <h2>Using spreadsheets for a real electronics BOM?</h2>
+          <p>
+            We are looking for hardware teams that can evaluate PartSpan with a non-confidential BOM workflow and
+            tell us where the local-first experience helps or gets in the way. Joining the pilot is optional and free.
+          </p>
+        </div>
+        <div class="feature-list">
+          <span>Hardware startups preparing for NPI or small-batch production</span>
+          <span>Embedded / PCB design consultancies</span>
+          <span>Small EMS / contract-manufacturing teams</span>
+          <span>Engineering labs with repeated BOM and inventory work</span>
+          <a
+            class="primary-action"
+            id="pilot-link"
+            href="https://github.com/papalon0505/partspan-site/issues/new"
+            rel="noopener"
+            >Request a pilot conversation</a
+          >
+          <small>
+            Pilot requests are public GitHub issues. Do not include confidential BOMs, customer names, credentials,
+            proprietary part lists, or other sensitive company information.
+          </small>
+        </div>
+      </section>
+
       <section id="download" class="download">
         <div>
           <p class="eyebrow">Download</p>
-          <h2>Download the Free Desktop 0.1.1 RC.</h2>
+          <h2>Download the Free Desktop v0.1.1.</h2>
           <p>
             Install PartSpan as a local desktop app. BOM data stays on your computer in a local SQLite database.
             The macOS build is signed and notarized by Apple. The Windows build is not yet code-signed, so
@@ -279,5 +310,6 @@
       <span>PartSpan Free Edition</span>
       <span>Local-first BOM management. No supplier quote feed required.</span>
     </footer>
+    <script src="/distribution.js" defer></script>
   </body>
 </html>
