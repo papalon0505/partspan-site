@@ -3,25 +3,25 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>PartSpan Free Edition | Local BOM Management</title>
+    <title>PartSpan | Local BOM Control for KiCad Hardware Teams</title>
     <meta
       name="description"
-      content="PartSpan Free Edition is a local-first BOM management tool for electronics teams moving beyond spreadsheet BOM control. Free desktop app for macOS and Windows with local SQLite storage."
+      content="PartSpan is a local-first BOM control tool for small KiCad hardware teams: KiCad BOM import, RefDes checks, approved alternates, and inventory, with your data on your own machines. 14-day free trial; Pro from US$39/year."
     />
     <link rel="canonical" href="https://partspan.evelyn-ai.com/" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://partspan.evelyn-ai.com/" />
-    <meta property="og:title" content="PartSpan Free Edition | Local BOM Management" />
+    <meta property="og:title" content="PartSpan | Local BOM Control for KiCad Hardware Teams" />
     <meta
       property="og:description"
-      content="Offline-first BOM, AVL, and inventory management for electronics teams. Your BOM data stays on your machine — no cloud, no subscription."
+      content="Offline-first BOM, AVL, and inventory control for KiCad hardware teams. Your BOM data stays on your machines. 14-day free trial."
     />
     <meta property="og:site_name" content="PartSpan" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="PartSpan Free Edition | Local BOM Management" />
+    <meta name="twitter:title" content="PartSpan | Local BOM Control for KiCad Hardware Teams" />
     <meta
       name="twitter:description"
-      content="Offline-first BOM, AVL, and inventory management for electronics teams. Free desktop app for macOS and Windows."
+      content="Offline-first BOM, AVL, and inventory control for KiCad hardware teams. Desktop app for macOS and Windows with a 14-day free trial."
     />
     <link rel="stylesheet" href="/styles.css" />
     <script type="application/ld+json">
@@ -32,25 +32,26 @@
         "operatingSystem": "macOS, Windows",
         "applicationCategory": "BusinessApplication",
         "applicationSubCategory": "BOM management",
-        "description": "Offline-first BOM, AVL, and inventory management tool for electronics teams. All data stays in a local SQLite database on the user's machine — no cloud dependency, no subscription required for core use.",
+        "description": "Offline-first BOM, AVL, and inventory control for small KiCad hardware teams. All data stays in a local SQLite database on the team's own machines; Team Local shares one workspace over the office network.",
         "url": "https://partspan.evelyn-ai.com/",
         "downloadUrl": "https://partspan.evelyn-ai.com/#download",
-        "softwareVersion": "0.1.1",
-        "releaseNotes": "https://github.com/papalon0505/partspan-site/releases/tag/v0.1.1",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD",
-          "description": "Free Edition with local BOM, AVL, and inventory management"
-        },
+        "softwareVersion": "0.3.0",
+        "releaseNotes": "https://github.com/papalon0505/partspan-site/releases/tag/v0.3.0",
+        "offers": [
+          { "@type": "Offer", "name": "Pro", "price": "39", "priceCurrency": "USD", "description": "One user, per year, after a 14-day free trial" },
+          { "@type": "Offer", "name": "Team Local", "price": "199", "priceCurrency": "USD", "description": "A team on one office network, per site per year" }
+        ],
         "featureList": [
           "Local SQLite storage — BOM data never leaves the machine",
+          "KiCad 8/9 BOM export import with generated part numbers and DNP handling",
+          "Reference designator check: duplicates, count mismatches, invalid and missing RefDes",
           "CSV, TSV, and XLSX BOM import with validation",
           "RefDes-aware BOM matrix with line-level risk",
           "Approved Vendor List (AVL) alternate tracking",
           "Bin-level warehouse inventory map",
           "BOM revision drafts with confirm-and-release workflow",
-          "Workspace JSON export and CSV BOM export"
+          "Workspace backup and restore",
+          "Team Local: share one workspace on the office network over HTTPS with viewer, editor, and admin roles"
         ]
       }
     </script>
@@ -69,10 +70,10 @@
           },
           {
             "@type": "Question",
-            "name": "Is PartSpan free?",
+            "name": "Is there a free trial?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. The current public v0.1.1 Free Edition is available at no charge for local evaluation and BOM workflows. Paid local licensing is still under development and is not part of the current public release."
+              "text": "Yes. Every installation has a 14-day trial with all single-user features. After the trial the workspace becomes read-only until you activate a license; you can always view, search, export, and back up your data. Pro is US$39 per year (US$29 for the first year for the first 100 buyers). Team Local, for several people on one office network, is US$199 per site per year."
             }
           },
           {
@@ -80,7 +81,7 @@
             "name": "What file formats can PartSpan import?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "PartSpan imports BOMs from CSV, TSV, and XLSX files with columns for internal part number, MPN, description, quantity, reference designators, and footprint. Rows are validated before a draft BOM is created."
+              "text": "PartSpan imports the BOM CSV exported by KiCad 8 and 9 (Refs, Value, Footprint, Qty, DNP, plus optional IPN and MPN fields) and CSV, TSV, or XLSX files with internal part number, MPN, description, quantity, reference designators, and footprint. Rows and reference designators are checked before a draft BOM is created."
             }
           },
           {
@@ -88,7 +89,7 @@
             "name": "How is PartSpan different from cloud BOM tools like OpenBOM or PartsBox?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "PartSpan's current public Free Edition keeps BOM data local in a SQLite workspace you control. PartSpan is intended for teams that value local ownership and do not need mandatory cloud collaboration. Paid packaging is still under development."
+              "text": "PartSpan keeps BOM data in a local SQLite workspace you control instead of a hosted service. For a team, Team Local shares that workspace over your office network; nothing goes to a cloud. It is meant for small teams that want ownership of their data and do not need cloud collaboration."
             }
           },
           {
@@ -110,7 +111,7 @@
         <span>PartSpan</span>
       </a>
       <nav>
-        <a href="#free">Free Edition</a>
+        <a href="#pricing">Pricing</a>
         <a href="#workflow">Workflow</a>
         <a href="#download">Download</a>
         <a href="#pilot">Pilot</a>
@@ -124,11 +125,11 @@
           <p class="eyebrow">Local-first BOM management</p>
           <h1>Move electronics BOM work out of fragile spreadsheets.</h1>
           <p class="lead">
-            PartSpan Free Edition helps hardware teams manage BOM revisions, RefDes, approved alternates,
-            inventory locations, and where-used impact without uploading company BOM data to a sourcing cloud.
+            PartSpan imports your KiCad BOM, checks every reference designator, and keeps released revisions,
+            approved alternates, inventory, and where-used impact on your own machines — no cloud, no server to run.
           </p>
           <div class="hero-actions">
-            <a class="primary-action" href="#download">Get Free Edition</a>
+            <a class="primary-action" href="#download">Start 14-day trial</a>
             <a class="secondary-action" href="/sample-bom.csv">Download sample BOM</a>
             <a class="secondary-action" id="pilot-link-hero" href="#pilot">Join the pilot</a>
           </div>
@@ -147,23 +148,26 @@
         </div>
       </section>
 
-      <section id="free" class="section-grid">
+      <section id="pricing" class="section-grid">
         <div>
-          <p class="eyebrow">Free Edition</p>
-          <h2>Useful for small teams before PLM becomes necessary.</h2>
+          <p class="eyebrow">Pricing</p>
+          <h2>Try everything for 14 days. Then a small yearly license.</h2>
           <p>
-            Start with local BOM import, BOM Matrix review, RefDes visibility, AVL records, and simple inventory
-            locations. The current public release is the Free Edition; paid local packaging remains under development.
+            After the trial the workspace becomes read-only until a license is activated. Viewing, search, export,
+            and backup always keep working — your data is never locked away. Licenses activate offline.
+            Checkout opens with the 0.3.0 release.
           </p>
         </div>
         <div class="feature-list">
-          <span>CSV / XLSX BOM import</span>
-          <span>Released BOM Matrix</span>
-          <span>RefDes and footprint visibility</span>
-          <span>AVL alternates</span>
-          <span>Inventory bins</span>
-          <span>Where-used impact</span>
-          <span>Workspace JSON export</span>
+          <span><strong>Trial</strong> — free for 14 days, one user</span>
+          <span><strong>Pro</strong> — US$39 / year, one user (first 100 buyers: US$29 for the first year)</span>
+          <span><strong>Team Local</strong> — US$199 / year per site: one workspace shared on your office network over HTTPS, with viewer, editor, and admin roles</span>
+          <span>KiCad 8/9 BOM import</span>
+          <span>RefDes check before release</span>
+          <span>Released BOM Matrix and revisions</span>
+          <span>AVL alternates with review dates</span>
+          <span>Inventory bins and where-used impact</span>
+          <span>Backup and restore</span>
           <span>English / 繁中 interface</span>
         </div>
       </section>
@@ -180,7 +184,7 @@
           <article>
             <strong>2</strong>
             <h3>Import BOM</h3>
-            <p>Paste or upload a spreadsheet with internal PN, MPN, quantity, RefDes, and footprint.</p>
+            <p>Load the BOM CSV exported by KiCad, or a spreadsheet with internal PN, MPN, quantity, RefDes, and footprint. PartSpan checks every reference designator.</p>
           </article>
           <article>
             <strong>3</strong>
@@ -222,9 +226,10 @@
       <section id="download" class="download">
         <div>
           <p class="eyebrow">Download</p>
-          <h2>Download the Free Desktop v0.1.1.</h2>
+          <h2>Download PartSpan 0.3.0.</h2>
           <p>
-            Install PartSpan as a local desktop app. BOM data stays on your computer in a local SQLite database.
+            Install PartSpan as a local desktop app; the 14-day trial starts when you create your first workspace.
+            BOM data stays on your computer in a local SQLite database.
             The macOS build is signed and notarized by Apple. The Windows build is not yet code-signed, so
             SmartScreen may show a warning.
           </p>
@@ -232,17 +237,17 @@
         <div class="install-card">
           <a
             class="primary-action"
-            href="https://github.com/papalon0505/partspan-site/releases/download/v0.1.1/PartSpan-0.1.1-mac-arm64.dmg"
+            href="https://github.com/papalon0505/partspan-site/releases/download/v0.3.0/PartSpan-0.3.0-mac-arm64.dmg"
             >Download for macOS</a
           >
           <a
             class="secondary-action"
-            href="https://github.com/papalon0505/partspan-site/releases/download/v0.1.1/PartSpan-0.1.1-win-x64.exe"
+            href="https://github.com/papalon0505/partspan-site/releases/download/v0.3.0/PartSpan-0.3.0-win-x64.exe"
             >Download for Windows</a
           >
           <a class="secondary-action" href="/sample-bom.csv">Try with sample BOM</a>
           <a class="release-link" href="/SHA256SUMS.txt">Verify SHA-256 checksums</a>
-          <a class="release-link" href="https://github.com/papalon0505/partspan-site/releases/tag/v0.1.1"
+          <a class="release-link" href="https://github.com/papalon0505/partspan-site/releases/tag/v0.3.0"
             >View release notes</a
           >
         </div>
@@ -289,8 +294,8 @@
           <p class="eyebrow">繁體中文</p>
           <h2>給還在用 Excel 管 BOM 的電子硬體團隊。</h2>
           <p>
-            PartSpan Free Edition 以本機資料庫管理 BOM、RefDes、AVL 替代料與庫存位置。
-            BOM 作業不需要供應商 API、報價資料源或雲端同步。
+            PartSpan 以本機資料庫管理 BOM、RefDes、AVL 替代料與庫存位置，可直接匯入 KiCad 的 BOM 並檢查每個位號。
+            14 天免費試用；Pro 每年 US$39，Team Local（同一辦公室網路多人共用）每站每年 US$199。不需要雲端。
           </p>
         </div>
         <div class="feature-list">
@@ -307,7 +312,7 @@
     </main>
 
     <footer>
-      <span>PartSpan Free Edition</span>
+      <span>PartSpan</span>
       <span>Local-first BOM management. No supplier quote feed required.</span>
     </footer>
     <script src="/distribution.js" defer></script>
