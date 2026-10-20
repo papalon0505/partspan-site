@@ -1,8 +1,10 @@
 # PartSpan Distribution Measurement Contract
 
-Last verified: 2026-10-03
+Last verified: 2026-10-20
 
 This document defines the minimum acquisition evidence for the public PartSpan distribution surface. It does not change the private product roadmap, release gate, billing model, or product telemetry policy.
+
+Current status: the homepage presents Revora as a pre-launch product. It describes approved product direction as in development, does not offer a Revora download, and does not announce pricing or a release date.
 
 ## Goal
 
@@ -14,11 +16,15 @@ The funnel is:
 
 Only the first three stages are implemented by this baseline.
 
-## Current public baseline
+## Public distribution status
 
 Public repository: `papalon0505/partspan-site`
 
-Current public release: `v0.1.1`
+Current website: Revora pre-launch overview.
+
+Most recent public artifact: PartSpan Desktop `v0.1.1` (legacy; not a Revora release). It remains available from the legacy release link.
+
+Revora is not yet listed or available to download. Mac and iPad App Store availability is in preparation; pricing and release timing have not been announced.
 
 Current installer counters are aggregate GitHub release download counts. They are useful as a coarse attention signal but cannot identify unique users or acquisition source.
 
@@ -106,17 +112,18 @@ The second threshold is not considered measurable by GitHub release counters alo
 
 ## Truthfulness rule
 
-The public site must describe only the currently available public build.
+The public site must distinguish a released build from a pre-launch product overview. It may describe owner-approved product direction only when clearly labeled as planned or in development. Do not advertise unmerged private-repository PRs as shipping features.
 
-For v0.1.1:
+For the legacy v0.1.1 artifact:
 
-- Free Edition is public.
+- The PartSpan Free Edition was distributed publicly and remains available as a legacy build.
+- Do not present v0.1.1 as the current Revora product or as an App Store build.
 - macOS Apple Silicon and Windows x64 installers are public.
 - macOS signing/notarization status may be stated only as verified for the published artifact.
 - Windows unsigned/SmartScreen warning must remain visible while true.
-- Paid local licensing is under development and must not be presented as a currently purchasable capability.
+- No current Revora price or license terms are announced; do not reuse historical pricing as current public pricing.
 - Unmerged private-repository PRs must not be advertised as shipping features.
 
 ## Next evidence
 
-After this baseline is deployed, the next distribution decision should use observed acquisition evidence rather than adding product features merely to compensate for low traffic.
+Before starting an acquisition campaign for Revora, review the public page, confirm the release and support path, and use observed acquisition evidence rather than adding product features merely to compensate for low traffic.
