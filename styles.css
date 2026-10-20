@@ -688,3 +688,38 @@ td:first-child {
     transition-duration: 0.01ms !important;
   }
 }
+
+.legal-page {
+  max-width: 46rem;
+  margin: 0 auto;
+  padding: 3rem 1rem 4rem;
+}
+
+.legal-page h1 {
+  margin: 0.25rem 0 0.5rem;
+  font-size: clamp(2rem, 5vw, 2.75rem);
+  line-height: 1.15;
+}
+
+.legal-page h2 {
+  margin: 2rem 0 0.5rem;
+  font-size: 1.2rem;
+}
+
+.legal-page ul {
+  padding-left: 1.25rem;
+}
+
+.legal-page li + li {
+  margin-top: 0.4rem;
+}
+
+.legal-meta {
+  color: var(--muted);
+}
+
+.text-link {
+  color: var(--accent-dark);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+}
