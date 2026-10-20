@@ -40,7 +40,7 @@
 
   function buildPilotUrl(attribution) {
     const lines = [
-      'I would like to evaluate PartSpan with a real, non-confidential electronics BOM workflow.',
+      'I would like to discuss evaluating Revora with a real, non-confidential electronics BOM workflow.',
       '',
       'Please do not include confidential BOMs, customer names, credentials, proprietary part lists, or other sensitive company information in this public issue.',
       '',
@@ -48,7 +48,7 @@
       '- Team / role:',
       '- Current BOM process (for example Excel, Google Sheets, InvenTree, BOMIST, PLM):',
       '- Approximate number of active products / BOMs:',
-      '- Main problem you want to test with PartSpan:',
+      '- Main problem you want to evaluate with Revora:',
       '',
       '### Voluntary acquisition attribution',
     ]
@@ -63,7 +63,7 @@
     lines.push('', 'I understand this is a public GitHub issue and I will not post confidential company data.')
 
     const url = new URL('https://github.com/papalon0505/partspan-site/issues/new')
-    url.searchParams.set('title', 'PartSpan pilot interest')
+    url.searchParams.set('title', 'Revora pilot interest')
     url.searchParams.set('body', lines.join('\n'))
     return url.toString()
   }
@@ -71,16 +71,10 @@
   const attribution = readAttribution()
   const pilotUrl = buildPilotUrl(attribution)
 
-  for (const id of ['pilot-link', 'pilot-link-hero']) {
-    const link = document.getElementById(id)
-    if (link) {
-      link.href = pilotUrl
-      link.target = '_blank'
-      link.rel = 'noopener'
-    }
-  }
-
-  for (const link of document.querySelectorAll('a[href*="/releases/download/"]')) {
-    link.dataset.partspanAttribution = JSON.stringify(attribution)
+  const link = document.getElementById('pilot-link')
+  if (link) {
+    link.href = pilotUrl
+    link.target = '_blank'
+    link.rel = 'noopener'
   }
 })()

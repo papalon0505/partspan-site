@@ -3,312 +3,243 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>PartSpan Free Edition | Local BOM Management</title>
+    <meta name="theme-color" content="#f5f7f5" />
+    <title>Revora | BOM control for small hardware teams</title>
     <meta
       name="description"
-      content="PartSpan Free Edition is a local-first BOM management tool for electronics teams moving beyond spreadsheet BOM control. Free desktop app for macOS and Windows with local SQLite storage."
+      content="Revora is a local-first BOM control workspace in development for small hardware teams. Explore its product direction and planned Mac and iPad App Store availability."
     />
     <link rel="canonical" href="https://partspan.evelyn-ai.com/" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://partspan.evelyn-ai.com/" />
-    <meta property="og:title" content="PartSpan Free Edition | Local BOM Management" />
+    <meta property="og:title" content="Revora | BOM control for small hardware teams" />
     <meta
       property="og:description"
-      content="Offline-first BOM, AVL, and inventory management for electronics teams. Your BOM data stays on your machine — no cloud, no subscription."
+      content="A focused, local-first BOM workspace for small hardware teams. Mac and iPad App Store availability is in preparation."
     />
-    <meta property="og:site_name" content="PartSpan" />
+    <meta property="og:site_name" content="Revora" />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="PartSpan Free Edition | Local BOM Management" />
+    <meta name="twitter:title" content="Revora | BOM control for small hardware teams" />
     <meta
       name="twitter:description"
-      content="Offline-first BOM, AVL, and inventory management for electronics teams. Free desktop app for macOS and Windows."
+      content="A focused, local-first BOM workspace for small hardware teams. Not yet available for download."
     />
     <link rel="stylesheet" href="/styles.css" />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "PartSpan",
-        "operatingSystem": "macOS, Windows",
-        "applicationCategory": "BusinessApplication",
-        "applicationSubCategory": "BOM management",
-        "description": "Offline-first BOM, AVL, and inventory management tool for electronics teams. All data stays in a local SQLite database on the user's machine — no cloud dependency, no subscription required for core use.",
-        "url": "https://partspan.evelyn-ai.com/",
-        "downloadUrl": "https://partspan.evelyn-ai.com/#download",
-        "softwareVersion": "0.1.1",
-        "releaseNotes": "https://github.com/papalon0505/partspan-site/releases/tag/v0.1.1",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD",
-          "description": "Free Edition with local BOM, AVL, and inventory management"
-        },
-        "featureList": [
-          "Local SQLite storage — BOM data never leaves the machine",
-          "CSV, TSV, and XLSX BOM import with validation",
-          "RefDes-aware BOM matrix with line-level risk",
-          "Approved Vendor List (AVL) alternate tracking",
-          "Bin-level warehouse inventory map",
-          "BOM revision drafts with confirm-and-release workflow",
-          "Workspace JSON export and CSV BOM export"
-        ]
-      }
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Does PartSpan upload my BOM data to the cloud?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "No. PartSpan is offline-first: all BOM, AVL, and inventory data is stored in a local SQLite database on your own machine. Nothing is uploaded to any cloud service."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is PartSpan free?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes. The current public v0.1.1 Free Edition is available at no charge for local evaluation and BOM workflows. Paid local licensing is still under development and is not part of the current public release."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What file formats can PartSpan import?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "PartSpan imports BOMs from CSV, TSV, and XLSX files with columns for internal part number, MPN, description, quantity, reference designators, and footprint. Rows are validated before a draft BOM is created."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How is PartSpan different from cloud BOM tools like OpenBOM or PartsBox?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "PartSpan's current public Free Edition keeps BOM data local in a SQLite workspace you control. PartSpan is intended for teams that value local ownership and do not need mandatory cloud collaboration. Paid packaging is still under development."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Which platforms does PartSpan support?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "PartSpan Desktop runs on macOS (Apple Silicon, signed and notarized by Apple) and Windows x64."
-            }
-          }
-        ]
-      }
-    </script>
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="/">
-        <span class="brand-mark">P</span>
-        <span>PartSpan</span>
+      <a class="brand" href="/" aria-label="Revora home">
+        <span class="brand-mark" aria-hidden="true">R</span>
+        <span>Revora</span>
       </a>
-      <nav>
-        <a href="#free">Free Edition</a>
+      <nav aria-label="Main navigation">
+        <a href="#features">Features</a>
         <a href="#workflow">Workflow</a>
-        <a href="#download">Download</a>
-        <a href="#pilot">Pilot</a>
-        <a href="#zh">繁中</a>
+        <a href="#data">Data ownership</a>
+        <a href="#availability">Availability</a>
       </nav>
+      <a class="header-link" href="#availability">Coming to the App Store</a>
     </header>
 
     <main>
       <section class="hero">
         <div class="hero-copy">
-          <p class="eyebrow">Local-first BOM management</p>
-          <h1>Move electronics BOM work out of fragile spreadsheets.</h1>
+          <p class="status-pill"><span aria-hidden="true"></span> In development · App Store release in preparation</p>
+          <p class="eyebrow">BOM control for small hardware teams</p>
+          <h1>Keep every parts decision connected to the product.</h1>
           <p class="lead">
-            PartSpan Free Edition helps hardware teams manage BOM revisions, RefDes, approved alternates,
-            inventory locations, and where-used impact without uploading company BOM data to a sourcing cloud.
+            Revora is being built for teams that have outgrown spreadsheet BOMs. It brings revisions,
+            reference designators, approved alternates, and stock locations into a focused workspace
+            designed around local ownership.
           </p>
           <div class="hero-actions">
-            <a class="primary-action" href="#download">Get Free Edition</a>
-            <a class="secondary-action" href="/sample-bom.csv">Download sample BOM</a>
-            <a class="secondary-action" id="pilot-link-hero" href="#pilot">Join the pilot</a>
+            <a class="button button-primary" href="#features">Explore the product</a>
+            <a class="button button-secondary" href="#availability">Check availability</a>
           </div>
+          <p class="hero-note">Mac and iPad App Store availability is planned. Revora is not yet available to download.</p>
         </div>
-        <div class="product-panel" aria-label="PartSpan workflow preview">
-          <div class="panel-top">
-            <span>BOM Matrix</span>
-            <strong>PRD-007 Rev C</strong>
+
+        <div class="preview-card" aria-label="Illustrative BOM workspace preview with sample data">
+          <div class="preview-heading">
+            <div>
+              <span class="preview-kicker">Illustrative preview · sample data</span>
+              <h2>Controller board</h2>
+            </div>
+            <span class="revision-chip">Rev C</span>
           </div>
-          <div class="matrix">
-            <span>RefDes</span><span>Internal PN</span><span>MPN</span><span>AVL</span>
-            <strong>U1</strong><strong>IC-0001</strong><strong>STM32F407VGT6</strong><em>2 approved</em>
-            <strong>U2</strong><strong>IC-0002</strong><strong>TPS5430DDAR</strong><em>1 conditional</em>
-            <strong>J1</strong><strong>CON-0001</strong><strong>USB4105-GF-A</strong><em class="risk">shortage</em>
+          <div class="preview-summary">
+            <span><strong>01</strong> product</span>
+            <span><strong>03</strong> sample lines</span>
+            <span class="release-state"><span aria-hidden="true"></span> Released</span>
           </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">RefDes</th>
+                  <th scope="col">Part</th>
+                  <th scope="col">AVL</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>U1</td>
+                  <td>Control IC</td>
+                  <td><span class="table-state">Approved</span></td>
+                </tr>
+                <tr>
+                  <td>R14</td>
+                  <td>10 kΩ resistor</td>
+                  <td><span class="table-state">Approved</span></td>
+                </tr>
+                <tr>
+                  <td>J2</td>
+                  <td>USB-C connector</td>
+                  <td><span class="table-state table-state-muted">Conditional</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="preview-footnote">Conceptual layout only — this is not a screenshot of the released app.</p>
         </div>
       </section>
 
-      <section id="free" class="section-grid">
-        <div>
-          <p class="eyebrow">Free Edition</p>
-          <h2>Useful for small teams before PLM becomes necessary.</h2>
+      <section class="intro section-shell">
+        <p class="eyebrow">Why Revora</p>
+        <div class="intro-grid">
+          <h2>Clear BOM control, without taking on a full PLM system.</h2>
           <p>
-            Start with local BOM import, BOM Matrix review, RefDes visibility, AVL records, and simple inventory
-            locations. The current public release is the Free Edition; paid local packaging remains under development.
+            Small electronics teams need to know which revision is released, whether each reference is
+            accounted for, which alternates are approved, and where parts are stocked. Revora focuses on
+            those everyday decisions instead of supplier networks or production planning.
           </p>
         </div>
-        <div class="feature-list">
-          <span>CSV / XLSX BOM import</span>
-          <span>Released BOM Matrix</span>
-          <span>RefDes and footprint visibility</span>
-          <span>AVL alternates</span>
-          <span>Inventory bins</span>
-          <span>Where-used impact</span>
-          <span>Workspace JSON export</span>
-          <span>English / 繁中 interface</span>
-        </div>
       </section>
 
-      <section id="workflow" class="workflow">
-        <p class="eyebrow">Simple operating flow</p>
-        <h2>Three steps to organize the first product BOM.</h2>
-        <div class="steps">
+      <section id="features" class="features section-shell">
+        <div class="section-heading">
+          <p class="eyebrow">Product direction</p>
+          <h2>Designed around the questions your team asks every day.</h2>
+          <p>These are the core capabilities Revora is being developed to bring together.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-index">01</span>
+            <h3>BOM revisions</h3>
+            <p>Keep released revisions easy to find and review proposed changes in context.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-index">02</span>
+            <h3>Reference designators</h3>
+            <p>Check that reference designators and line quantities agree, and spot missing or duplicate entries.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-index">03</span>
+            <h3>Approved alternates</h3>
+            <p>Track primary manufacturer parts and alternatives with clear approved, conditional, or blocked status.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-index">04</span>
+            <h3>Where-used context</h3>
+            <p>Trace the products and revisions that use a part before making a change.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-index">05</span>
+            <h3>Inventory locations</h3>
+            <p>Connect part records to on-hand quantities and the bins where stock is kept.</p>
+          </article>
+          <article class="feature-card feature-card-accent">
+            <span class="feature-index">06</span>
+            <h3>Local-first workspace</h3>
+            <p>Keep BOM work under your control without depending on a hosted BOM cloud or a server to run.</p>
+          </article>
+        </div>
+        <p class="scope-note">Revora is not an ERP, purchasing system, supplier quote service, or compliance product.</p>
+      </section>
+
+      <section id="workflow" class="workflow section-shell">
+        <div class="section-heading">
+          <p class="eyebrow">A focused workflow</p>
+          <h2>Move from an incoming BOM to a change you can explain.</h2>
+        </div>
+        <div class="workflow-grid">
           <article>
-            <strong>1</strong>
-            <h3>Create local workspace</h3>
-            <p>PartSpan stores product, part, BOM, AVL, inventory, and audit data in a local SQLite database.</p>
+            <span>01</span>
+            <h3>Bring in the BOM</h3>
+            <p>Start from the product data your hardware team already maintains.</p>
           </article>
           <article>
-            <strong>2</strong>
-            <h3>Import BOM</h3>
-            <p>Paste or upload a spreadsheet with internal PN, MPN, quantity, RefDes, and footprint.</p>
+            <span>02</span>
+            <h3>Review the details</h3>
+            <p>Check line items, reference designators, alternates, and inventory context together.</p>
           </article>
           <article>
-            <strong>3</strong>
-            <h3>Review and release</h3>
-            <p>Confirm the BOM Matrix, then add inventory locations and approved alternates.</p>
+            <span>03</span>
+            <h3>Understand the change</h3>
+            <p>Compare revisions and see where a part decision may affect other products.</p>
           </article>
         </div>
       </section>
 
-
-      <section id="pilot" class="section-grid">
-        <div>
-          <p class="eyebrow">Pilot program</p>
-          <h2>Using spreadsheets for a real electronics BOM?</h2>
-          <p>
-            We are looking for hardware teams that can evaluate PartSpan with a non-confidential BOM workflow and
-            tell us where the local-first experience helps or gets in the way. Joining the pilot is optional and free.
-          </p>
-        </div>
-        <div class="feature-list">
-          <span>Hardware startups preparing for NPI or small-batch production</span>
-          <span>Embedded / PCB design consultancies</span>
-          <span>Small EMS / contract-manufacturing teams</span>
-          <span>Engineering labs with repeated BOM and inventory work</span>
-          <a
-            class="primary-action"
-            id="pilot-link"
-            href="https://github.com/papalon0505/partspan-site/issues/new"
-            rel="noopener"
-            >Request a pilot conversation</a
-          >
-          <small>
-            Pilot requests are public GitHub issues. Do not include confidential BOMs, customer names, credentials,
-            proprietary part lists, or other sensitive company information.
-          </small>
+      <section id="data" class="data-section">
+        <div class="section-shell data-grid">
+          <div>
+            <p class="eyebrow">Data ownership</p>
+            <h2>Your BOM workspace stays under your control.</h2>
+          </div>
+          <div>
+            <p>
+              Revora is designed around local workspaces. Core BOM work does not depend on storing your
+              design data in a hosted cloud service. Full privacy and support details will be published
+              before downloads or subscriptions become available.
+            </p>
+            <p class="data-note">No claim of certification or compliance is made.</p>
+          </div>
         </div>
       </section>
 
-      <section id="download" class="download">
-        <div>
-          <p class="eyebrow">Download</p>
-          <h2>Download the Free Desktop v0.1.1.</h2>
-          <p>
-            Install PartSpan as a local desktop app. BOM data stays on your computer in a local SQLite database.
-            The macOS build is signed and notarized by Apple. The Windows build is not yet code-signed, so
-            SmartScreen may show a warning.
-          </p>
-        </div>
-        <div class="install-card">
-          <a
-            class="primary-action"
-            href="https://github.com/papalon0505/partspan-site/releases/download/v0.1.1/PartSpan-0.1.1-mac-arm64.dmg"
-            >Download for macOS</a
-          >
-          <a
-            class="secondary-action"
-            href="https://github.com/papalon0505/partspan-site/releases/download/v0.1.1/PartSpan-0.1.1-win-x64.exe"
-            >Download for Windows</a
-          >
-          <a class="secondary-action" href="/sample-bom.csv">Try with sample BOM</a>
-          <a class="release-link" href="/SHA256SUMS.txt">Verify SHA-256 checksums</a>
-          <a class="release-link" href="https://github.com/papalon0505/partspan-site/releases/tag/v0.1.1"
-            >View release notes</a
-          >
-        </div>
-      </section>
-
-      <section class="section-grid install-help">
-        <div>
-          <p class="eyebrow">First launch</p>
-          <h2>Opening the desktop installer.</h2>
-          <p>
-            The macOS build opens normally. The Windows build is not yet code-signed, so SmartScreen will warn you
-            the first time — the steps below are only needed once.
-          </p>
-        </div>
-        <div class="install-steps">
-          <div class="install-step">
-            <h3>macOS</h3>
-            <ol>
-              <li>Open the DMG and drag PartSpan to Applications.</li>
-              <li>Double-click to launch. The app is signed and notarized by Apple — no security bypass needed.</li>
-            </ol>
-            <p lang="zh-Hant">
-              中文：打開 DMG，把 PartSpan 拖進「應用程式」，直接雙擊開啟即可。App 已完成 Apple 簽章與公證。
+      <section id="availability" class="availability section-shell">
+        <div class="availability-card">
+          <div>
+            <p class="eyebrow">Availability</p>
+            <h2>Preparing for Mac and iPad.</h2>
+            <p>
+              Revora is in development for a Mac and iPad App Store release. It is not listed or available
+              for download yet. Pricing and release timing have not been announced.
             </p>
           </div>
-          <div class="install-step">
-            <h3>Windows</h3>
-            <ol>
-              <li>Run the installer EXE.</li>
-              <li>
-                When SmartScreen shows "Windows protected your PC", click <strong>More info</strong>, then
-                <strong>Run anyway</strong>.
-              </li>
-            </ol>
-            <p lang="zh-Hant">
-              中文：SmartScreen 出現「Windows 已保護您的電腦」時，點「其他資訊」再點「仍要執行」。
-            </p>
-          </div>
+          <span class="availability-badge"><span aria-hidden="true"></span> Not yet available</span>
         </div>
       </section>
 
-      <section id="zh" class="section-grid zh-block" lang="zh-Hant">
+      <section id="pilot" class="pilot section-shell">
         <div>
-          <p class="eyebrow">繁體中文</p>
-          <h2>給還在用 Excel 管 BOM 的電子硬體團隊。</h2>
-          <p>
-            PartSpan Free Edition 以本機資料庫管理 BOM、RefDes、AVL 替代料與庫存位置。
-            BOM 作業不需要供應商 API、報價資料源或雲端同步。
-          </p>
+          <p class="eyebrow">Early evaluation</p>
+          <h2>Work with BOMs every week?</h2>
+          <p>Hardware teams can request a conversation about evaluating Revora with a non-confidential workflow.</p>
         </div>
-        <div class="feature-list">
-          <span>本機 SQLite 儲存</span>
-          <span>CSV / XLSX 匯入</span>
-          <span>BOM 矩陣</span>
-          <span>RefDes 位號</span>
-          <span>AVL 替代料</span>
-          <span>庫存儲位</span>
-          <span>使用位置分析</span>
-          <span>中英文介面</span>
+        <div class="pilot-action">
+          <a class="button button-primary" id="pilot-link" href="https://github.com/papalon0505/partspan-site/issues/new" rel="noopener">Request a pilot conversation</a>
+          <small>This opens a public GitHub issue. Do not post BOM files, customer names, credentials, proprietary part lists, or other confidential information.</small>
         </div>
+      </section>
+
+      <section class="legacy-note section-shell">
+        <p>
+          <strong>Looking for the earlier PartSpan build?</strong>
+          The public v0.1.1 release remains available as a legacy download.
+          <a href="https://github.com/papalon0505/partspan-site/releases/tag/v0.1.1">View the legacy release</a>.
+        </p>
       </section>
     </main>
 
-    <footer>
-      <span>PartSpan Free Edition</span>
-      <span>Local-first BOM management. No supplier quote feed required.</span>
+    <footer class="site-footer">
+      <a class="brand" href="/" aria-label="Revora home">
+        <span class="brand-mark" aria-hidden="true">R</span>
+        <span>Revora</span>
+      </a>
+      <p>Local-first BOM control for small hardware teams.</p>
+      <p class="footer-note">Privacy and support information will be available before downloads or subscriptions.</p>
     </footer>
     <script src="/distribution.js" defer></script>
   </body>

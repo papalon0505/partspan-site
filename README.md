@@ -1,58 +1,24 @@
-# PartSpan Free Edition
+# Revora Website
 
-Local-first BOM, AVL, RefDes, and inventory management for electronics teams moving beyond spreadsheet BOM control.
+Public pre-launch product site for Revora:
+[partspan.evelyn-ai.com](https://partspan.evelyn-ai.com/).
 
-[Download PartSpan](https://partspan.evelyn-ai.com/#download) · [Join the pilot](https://partspan.evelyn-ai.com/#pilot) · [Website](https://partspan.evelyn-ai.com/) · [v0.1.1 release](https://github.com/papalon0505/partspan-site/releases/tag/v0.1.1) · [SHA-256 checksums](https://partspan.evelyn-ai.com/SHA256SUMS.txt)
+Revora is a local-first BOM control workspace in development for small hardware teams. The current page describes its product direction and planned Mac and iPad App Store availability. Revora is not yet available for download; pricing and release timing have not been announced.
 
-![PartSpan BOM Matrix preview](docs/partspan-bom-matrix-preview.svg)
+## Public content boundary
 
-## Why It Exists
+This repository contains the static marketing site and public distribution material only. It does not contain or link to the Revora product source code; the product repository remains private.
 
-Small hardware teams often manage product BOMs in spreadsheets until RefDes, AVL alternates, inventory bins, and revision control become hard to trust. PartSpan keeps that work local in a desktop app, without requiring a supplier quote feed or cloud PLM account.
+The site describes capabilities as product direction, not as a currently released build. It does not publish unverified prices, release dates, or App Store listings. The earlier PartSpan v0.1.1 release remains available as a legacy artifact.
 
-## Free Edition
+The voluntary pilot link opens a public GitHub issue. Do not submit confidential BOMs, customer names, credentials, or proprietary part lists there.
 
-- Local SQLite workspace storage
-- CSV, TSV, and XLSX BOM import
-- BOM Matrix review and release flow
-- RefDes and footprint visibility
-- AVL alternate tracking
-- Inventory bin locations
-- Where-used impact checks
-- Workspace JSON export and sample BOM import
-- English and Traditional Chinese interface
+## Site structure
 
-## Downloads
+- `index.html`: English product overview, features, data ownership, availability, and pilot information.
+- `styles.css`: responsive styles; no external UI framework or runtime dependency.
+- `distribution.js`: optional campaign attribution for the voluntary pilot request only.
+- `llms.txt`: concise, current public product facts for AI crawlers.
+- `CNAME`: existing site domain.
 
-Current public release: [PartSpan Desktop v0.1.1](https://github.com/papalon0505/partspan-site/releases/tag/v0.1.1)
-
-| Platform | Installer |
-| --- | --- |
-| macOS Apple Silicon | [PartSpan-0.1.1-mac-arm64.dmg](https://github.com/papalon0505/partspan-site/releases/download/v0.1.1/PartSpan-0.1.1-mac-arm64.dmg) |
-| Windows x64 | [PartSpan-0.1.1-win-x64.exe](https://github.com/papalon0505/partspan-site/releases/download/v0.1.1/PartSpan-0.1.1-win-x64.exe) |
-
-Verify installers with [SHA256SUMS.txt](https://github.com/papalon0505/partspan-site/releases/download/v0.1.1/SHA256SUMS.txt).
-
-## Pilot Feedback
-
-PartSpan is recruiting hardware teams that currently manage real BOM / AVL / inventory workflows in spreadsheets or lightweight tools.
-
-Use the public site's **Join the pilot** action to open a voluntary GitHub pilot-interest issue. Do not post confidential BOMs, credentials, customer names, proprietary part lists, or other sensitive company information.
-
-Campaign attribution and measurement boundaries are documented in [docs/distribution-measurement.md](docs/distribution-measurement.md).
-
-Paid local licensing is still under development and is not part of the current public v0.1.1 release.
-
-## Security Notes
-
-- macOS DMG and app are signed, notarized by Apple, and stapled.
-- Windows installer is not yet code-signed, so SmartScreen may show a warning.
-- BOM data stays in the local workspace database on the user's machine.
-
-## 中文簡介
-
-PartSpan Free Edition 是給電子硬體團隊使用的本機 BOM 管理工具，可管理 BOM Matrix、RefDes 位號、AVL 替代料與庫存位置。核心使用不需要供應商報價 API，也不需要把公司 BOM 上傳到雲端。
-
-## Repository Scope
-
-This public repository hosts the product website, public downloads, checksums, and sample BOM material. The private product source remains separate.
+GitHub Pages deploys this repository's `main` branch through `.github/workflows/pages.yml`.
