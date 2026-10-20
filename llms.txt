@@ -1,18 +1,35 @@
-# PartSpan
+# Revora
 
-> PartSpan is an offline-first BOM (bill of materials), AVL (approved vendor list), and inventory control desktop tool for small KiCad hardware teams. All data is stored in a local SQLite database on the team's own machines; there is no hosted service.
+> Revora is a local-first BOM (bill of materials) control workspace in development for small hardware teams. This is a pre-launch product overview, not a download or release notice.
 
-Key facts:
+## Positioning
 
-- Product type: desktop application (Electron) for macOS (Apple Silicon, signed and notarized) and Windows x64 (not code-signed)
-- Pricing: 14-day trial; afterwards the workspace is read-only until a license is activated (view, search, export, and backup always work). Pro US$39/year for one user (first 100 buyers US$29 for the first year). Team Local US$199/year per site for several users on one office network
-- Import: the BOM CSV exported by KiCad 8 and 9 (Refs, Value, Footprint, Qty, DNP, optional IPN and MPN fields) and CSV, TSV, or XLSX with internal part number, MPN, description, quantity, reference designators, and footprint
-- Core features: reference designator check (duplicates, count mismatches, invalid and missing), released BOM revisions, AVL alternates (approved / conditional / blocked) with review dates, bin-level inventory, where-used analysis, audit log, backup and restore
-- Team Local: one machine shares the workspace on the office network over HTTPS (self-signed certificate with a fingerprint to verify) with viewer, editor, and admin roles; licenses activate offline
-- Target users: small hardware teams (2–15 people) designing in KiCad and managing BOMs in spreadsheets
+Revora is being built for small hardware teams that have outgrown spreadsheet BOMs. Its product direction focuses on released revisions, reference designators, approved manufacturer-part alternates, where-used context, and inventory locations in a workspace managed by the customer.
 
-## Links
+Revora is not an ERP, MRP, purchasing system, supplier quote service, hosted BOM cloud, or compliance product. Core BOM work is designed not to depend on a hosted cloud service or a server to run.
 
-- [Homepage](https://partspan.evelyn-ai.com/): product overview, pricing, download links, install instructions
-- [Downloads](https://github.com/papalon0505/partspan-site/releases/tag/v0.3.0): macOS DMG and Windows EXE installers
-- [Sample BOM CSV](https://partspan.evelyn-ai.com/sample-bom.csv): example import file
+## Product direction
+
+The product is being developed to support:
+- BOM revision review and change context
+- Reference-designator and quantity checks
+- Approved, conditional, and blocked alternate status
+- Where-used analysis across products and revisions
+- Inventory quantities and bin locations
+- Local-first workspace ownership
+
+These are planned product capabilities and should not be described as a currently released build.
+
+## Availability
+
+- Mac and iPad App Store availability is in preparation.
+- Revora is not yet listed or available to download.
+- Pricing and release timing have not been announced.
+- The site remains at https://partspan.evelyn-ai.com/ while domain decisions are pending.
+- The earlier public PartSpan v0.1.1 release is a legacy build, not the current Revora release.
+
+## Privacy and support
+
+The product direction avoids requiring hosted BOM storage. Full privacy and support information will be published before downloads or subscriptions become available.
+
+This public site does not contain or link to the private product source code.
