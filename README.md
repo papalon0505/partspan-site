@@ -3,7 +3,7 @@
 Public product site for Revstage:
 [partspan.evelyn-ai.com](https://partspan.evelyn-ai.com/).
 
-Revstage is a local-first BOM control workspace for small hardware teams. The site offers the Mac download (0.3.0), pricing with Polar checkout links, and the Mac App Store status.
+Revstage is a local-first BOM control workspace for small hardware teams. The site offers the Mac download (0.3.1), pricing with Polar checkout links, and the Mac App Store status.
 
 ## Public content boundary
 

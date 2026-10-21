@@ -1,6 +1,6 @@
 # Revstage
 
-> Revstage is a local-first BOM (bill of materials) control workspace for small hardware teams. Version 0.3.0 for Mac is available to download from this site.
+> Revstage is a local-first BOM (bill of materials) control workspace for small hardware teams. Version 0.3.1 for Mac is available to download from this site.
 
 ## Positioning
 
@@ -8,7 +8,7 @@ Revstage is being built for small hardware teams that have outgrown spreadsheet 
 
 Revstage is not an ERP, MRP, purchasing system, supplier quote service, hosted BOM cloud, or compliance product. Core BOM work is designed not to depend on a hosted cloud service or a server to run.
 
-## Features (0.3.0)
+## Features (0.3.1)
 
 - BOM import from CSV, TSV, XLSX and KiCad exports with reference-designator and quantity checks
 - Revision compare and engineering change orders (review, approve, release, audit trail)
@@ -22,7 +22,7 @@ Revstage is not an ERP, MRP, purchasing system, supplier quote service, hosted B
 
 - Mac (Apple silicon, macOS 12 or later): download from https://partspan.evelyn-ai.com/#download with a 14-day free trial.
 - Revstage Pro: US$100 per year, one person. Revstage Team: US$300 per year, up to 10 people.
-- Website purchases are sold by Polar; a license file is emailed after purchase.
+- Website purchases are sold by Polar; a license key is emailed right after purchase.
 - Mac App Store release is in review; iPad will follow.
 - The earlier public PartSpan v0.1.1 release is a legacy build.
 
