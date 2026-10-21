@@ -1,6 +1,6 @@
 # Revstage
 
-> Revstage is a local-first BOM (bill of materials) control workspace in development for small hardware teams. This is a pre-launch product overview, not a download or release notice.
+> Revstage is a local-first BOM (bill of materials) control workspace for small hardware teams. Version 0.3.0 for Mac is available to download from this site.
 
 ## Positioning
 
@@ -8,28 +8,26 @@ Revstage is being built for small hardware teams that have outgrown spreadsheet 
 
 Revstage is not an ERP, MRP, purchasing system, supplier quote service, hosted BOM cloud, or compliance product. Core BOM work is designed not to depend on a hosted cloud service or a server to run.
 
-## Product direction
+## Features (0.3.0)
 
-The product is being developed to support:
-- BOM revision review and change context
-- Reference-designator and quantity checks
+- BOM import from CSV, TSV, XLSX and KiCad exports with reference-designator and quantity checks
+- Revision compare and engineering change orders (review, approve, release, audit trail)
 - Approved, conditional, and blocked alternate status
 - Where-used analysis across products and revisions
 - Inventory quantities and bin locations
-- Local-first workspace ownership
+- BOM cost from imported DigiKey/Mouser quote exports or manual prices
+- Team sharing on the customer's own network (Team edition)
 
-These are planned product capabilities and should not be described as a currently released build.
+## Availability and pricing
 
-## Availability
-
-- Mac and iPad App Store availability is in preparation.
-- Revstage is not yet listed or available to download.
-- Pricing and release timing have not been announced.
-- The site remains at https://partspan.evelyn-ai.com/ while domain decisions are pending.
-- The earlier public PartSpan v0.1.1 release is a legacy build, not the current Revstage release.
+- Mac (Apple silicon, macOS 12 or later): download from https://partspan.evelyn-ai.com/#download with a 14-day free trial.
+- Revstage Pro: US$100 per year, one person. Revstage Team: US$300 per year, up to 10 people.
+- Website purchases are sold by Polar; a license file is emailed after purchase.
+- Mac App Store release is in review; iPad will follow.
+- The earlier public PartSpan v0.1.1 release is a legacy build.
 
 ## Privacy and support
 
-The product direction avoids requiring hosted BOM storage. Full privacy and support information will be published before downloads or subscriptions become available.
+Revstage does not require hosted BOM storage. Privacy policy: https://partspan.evelyn-ai.com/privacy/ . Support: https://partspan.evelyn-ai.com/support/ .
 
 This public site does not contain or link to the private product source code.
