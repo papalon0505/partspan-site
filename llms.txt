@@ -1,12 +1,12 @@
-# Revora
+# Revstage
 
-> Revora is a local-first BOM (bill of materials) control workspace in development for small hardware teams. This is a pre-launch product overview, not a download or release notice.
+> Revstage is a local-first BOM (bill of materials) control workspace in development for small hardware teams. This is a pre-launch product overview, not a download or release notice.
 
 ## Positioning
 
-Revora is being built for small hardware teams that have outgrown spreadsheet BOMs. Its product direction focuses on released revisions, reference designators, approved manufacturer-part alternates, where-used context, and inventory locations in a workspace managed by the customer.
+Revstage is being built for small hardware teams that have outgrown spreadsheet BOMs. Its product direction focuses on released revisions, reference designators, approved manufacturer-part alternates, where-used context, and inventory locations in a workspace managed by the customer.
 
-Revora is not an ERP, MRP, purchasing system, supplier quote service, hosted BOM cloud, or compliance product. Core BOM work is designed not to depend on a hosted cloud service or a server to run.
+Revstage is not an ERP, MRP, purchasing system, supplier quote service, hosted BOM cloud, or compliance product. Core BOM work is designed not to depend on a hosted cloud service or a server to run.
 
 ## Product direction
 
@@ -23,10 +23,10 @@ These are planned product capabilities and should not be described as a currentl
 ## Availability
 
 - Mac and iPad App Store availability is in preparation.
-- Revora is not yet listed or available to download.
+- Revstage is not yet listed or available to download.
 - Pricing and release timing have not been announced.
 - The site remains at https://partspan.evelyn-ai.com/ while domain decisions are pending.
-- The earlier public PartSpan v0.1.1 release is a legacy build, not the current Revora release.
+- The earlier public PartSpan v0.1.1 release is a legacy build, not the current Revstage release.
 
 ## Privacy and support
 
